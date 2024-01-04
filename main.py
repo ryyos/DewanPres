@@ -1,4 +1,6 @@
 from src import DewanPres
 
-dewan = DewanPres()
-dewan.main()
+
+if __name__ == '__main__':
+    dewan = DewanPres()
+    dewan.main()

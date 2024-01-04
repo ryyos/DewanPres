@@ -1,6 +1,4 @@
-import os
 import requests
-import html_to_json
 
 from icecream import ic
 from pyquery import PyQuery
@@ -133,6 +131,5 @@ class DewanPres:
                     })
                     
 
-            self.__file.write_json(path=f'private/{vname(results["attributes"]["name"])}.json', content=results)
-            ic("done")
+            self.__file.write_json(path=f'data/{vname(results["attributes"]["name"])}.json', content=results)
             
